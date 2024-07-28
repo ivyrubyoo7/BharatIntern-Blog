@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compose</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <style>
+        body {
+            background: url('https://i.pngimg.me/thumb/f/720/comrawpixel4007419.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        form input[type="text"], form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        form button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <form action="/compose" method="post">
+        <h1>Publish your Blog here !!!</h1>
+        <input type="text" name="postTitle" placeholder="Title" required>
+        <textarea name="postContent" placeholder="Content" rows="10" required></textarea>
+        <button type="submit">Publish</button>
+    </form>
+</body>
+</html>
